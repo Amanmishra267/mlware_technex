@@ -691,11 +691,11 @@ After training various models which are described above after appying various au
 to increase the metric as described below:-
 
 1. Pseudo-labelling: In this technique, we predicted labels on test data and fed the test data into the model using predicted labels as output and trained the model further. After every epoch, we tested the model and updated the labels and trained again.<br>
-<br>
+
 2. Test-time augmentation: In this technique, we used the above mentioned augmentations(except cutmix) to make about 15 augmentated images per original image(total 16 images). All the images are fed through models and majority voting is applied the various outputs of each model.<br>
-<br>
+
 3. Schostic Weight Averaging (SWA): In this technique, we averaged the weights for each layer in every model for the whole training cycle.<br>
-<br>
+
 4. Ensembling: In this technique, we used majority voting after testing and calculating final labels for each model.After this step, we saved and submitted the labels on compeitition submissions page.
 
 
